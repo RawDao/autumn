@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eb4f4e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Shape_218_copy_2" data-name="Shape 218 copy 2" class="cls-1" y="0.906" width="28" height="29" rx="1.931" ry="1.931"/>
+  <path id="rss" class="cls-2" d="M8.913,23.087a1.979,1.979,0,1,1,1.979-1.978A1.978,1.978,0,0,1,8.913,23.087ZM13.269,23c0-1.843-.138-3.379-1.432-4.677S8.867,16.8,7.038,16.8V13.733A8.985,8.985,0,0,1,16.29,23H13.269Zm5.423,0A11.516,11.516,0,0,0,7.042,11.362V8.253A14.769,14.769,0,0,1,21.728,23H18.692Z"/>
+</svg>

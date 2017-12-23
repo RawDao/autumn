@@ -1,0 +1,359 @@
+﻿/*========== global style ==========*/
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+.clearfix::after{
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	width: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font: normal 16px Arial, sans-serif;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*========== header style ==========*/
+
+.header{
+	background-color: #f56262;
+	padding: 26px 0 20px;;
+	color: #fff;
+}
+
+.header .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.header .logo{
+	font-size: 36px;
+	text-align: right;
+	font-weight: bold;
+	padding-left: 54px;
+	background: url("../images/headerLogo.svg") left top no-repeat;
+}
+
+.header .headerNav{
+	margin-top: 4px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;	
+}
+
+.header .headerNav li{
+	margin-left: 12px;
+}
+
+.header .headerNav a{
+	display: block;
+	padding: 8px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+.header .headerNav .active, .header .headerNav a:hover{
+	background-color: #232323;
+	border-radius: 4px;
+}
+
+/*========== mainWelcome style ==========*/
+
+.mainWelcome{
+	background-color: #eb4f4e;
+	color: #fff;
+	padding: 46px 0 22px;
+	text-align: center;
+}
+
+.mainWelcome h1{
+	font-size: 60px;
+	letter-spacing: 0.16em;
+}
+
+.mainWelcome p{
+	font-size: 20px;
+}
+
+/*========== mainSmart style ==========*/
+
+.mainSmart{
+	background-color: #323232;
+	color: #fff;
+	padding: 46px 0 24px;
+	text-align: center;
+}
+
+.mainSmart h2{
+	font-size: 40px;
+	letter-spacing: .16em;
+	margin-bottom: 16px;
+}
+
+.mainSmart p{
+	font-size: 20px;
+	color: #d94948;
+	margin-bottom: 32px;
+}
+
+.mainSmart .mainSmartCreative{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.mainSmartCreative .smartCreative{
+	flex: 1 1 33%;
+}
+
+.mainSmart .mainSmartCreative img{
+	margin-bottom: 16px;
+	transition: transform 0.5s;
+}
+
+.mainSmart .mainSmartCreative img:hover{
+	transform: rotate(360deg);
+}
+
+.mainSmart .mainSmartCreative h3{
+	font-size: 30px;
+	color: #fff;
+}
+
+.mainSmart .mainSmartCreative p{
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+/*========== mainTalented style ==========*/
+
+.mainTalented{
+	background-color: #6cc372;
+	padding: 42px 0 24px;
+	text-align: center;
+}
+
+.mainTalented h2{
+	font-size: 40px;	
+	letter-spacing: 0.16em;
+	color: #fff; 
+	margin-bottom: 8px;
+}
+
+.mainTalented p{
+	font-size: 20px;
+	margin-bottom: 36px;
+}
+
+.mainTalentedExperts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.mainTalentedExperts .talentedExperts{
+	flex: 1 1 224px;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 24px 10px 10px;
+	margin: 0 7px;
+}
+
+.mainTalentedExperts .talentedExperts img{
+	transition: 0.5s;
+}
+
+.mainTalentedExperts .talentedExperts img:hover{
+	transform: scale(1.2);
+}
+
+.talentedExperts .expertsName{
+	font-size: 20px;
+	color: #6cc372;
+	margin-bottom: 10px;
+}
+
+.talentedExperts .expertsWork{
+	font-size: 18px;	
+	color: #e74c3c;
+	margin-bottom: 10px;
+}
+
+.talentedExperts a{
+	display: block;	
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+	padding: 8px 0;
+	border-radius: 4px;
+	background: #6cc372 url("../images/mainTalentedTw.svg") 10px center no-repeat;
+}
+
+/*========== footer style ==========*/
+
+.footer{
+	background-color: #232323;
+	padding: 10px 0 4px;
+}
+
+
+.footer .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.footer p{
+	font-size: 18px;
+	color: #fff;
+}
+
+.footer p span{
+	color: #d94948;
+}
+
+.footer .footerSocial{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.footer .footerSocial a{
+	display: block;
+	margin-left: 6px;
+}
+
+/*========== responsive style ==========*/
+
+/* Large devices Desktops (более 1200px) */
+@media only screen and (min-width: 1201px){
+
+}
+
+/* Medium devices Desktops (от 1200px до 993px) */
+@media only screen and (max-width: 1200px) and ( min-width: 993px){
+	
+}
+
+/* Small devices Tablets (от 992px до 769px) */
+@media only screen and (max-width: 992px) and (min-width: 769px){
+
+}
+
+/* Small devices Phones (от 768px до 481px) */
+@media only screen and  (max-width: 768px) and (min-width: 481px){
+	.header .container{
+		justify-content: center;
+	}
+	.mainWelcome{
+		padding: 32px 0 16px;
+	}
+	.mainWelcome h1{
+		font-size: 40px;		
+	}
+	.mainSmart h2{
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	.mainSmart p{
+		font-size: 16px;		
+		margin-bottom: 8px;
+	}
+	.mainSmart .mainSmartCreative h3{
+		font-size: 24px;		
+	}
+	.mainTalented{
+		padding-top: 32px;	
+	}	
+	.mainTalented h2{
+		font-size: 32px;	
+	}
+	.mainTalented p{	
+		margin-bottom: 24px;
+	}
+}
+
+/* Extra small devices Phones (менее 480px) */
+@media only screen and (max-width: 480px){
+	.header .container{
+		justify-content: center;
+	}	
+	.mainWelcome{
+		padding: 16px 0 8px;
+	}	
+	.mainWelcome h1{
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.mainWelcome p{
+		font-size: 16px;
+	}
+	.mainSmart h2{
+		font-size: 20px;	
+		margin-bottom: 8px;
+	}
+	.mainSmart p{
+		font-size: 16px;		
+		margin-bottom: 8px;
+	}
+	.mainSmart .mainSmartCreative h3{
+		font-size: 20px;		
+	}
+	.mainTalented{
+		padding-top: 20px;
+	}
+	.mainTalented h2{
+		font-size: 24px;	
+	}
+	.mainTalented p{		
+		margin-bottom: 16px;
+	}
+	.talentedExperts a{
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.footer p{
+		font-size: 12px;
+	}
+	.footer .container{
+		justify-content: center;
+	}
+}
